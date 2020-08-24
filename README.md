@@ -11,6 +11,13 @@ As is probably obvious I've not had any time to properly put into this project i
 
 Apologies for this project having become so stagnant.
 
+## implementation
+
+1. create cookies, if cookies not found.
+2. find ticket in memory and set the request authenticated.
+3. if not found, redirect to cas server and then validate the ticket responsed by cas server.
+4. if validated, store ticket in menory and set the request authenticated.
+
 ## Examples and Documentation
 
 Documentation is available at: http://godoc.org/gopkg.in/cas.v2
